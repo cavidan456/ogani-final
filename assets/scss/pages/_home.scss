@@ -1,0 +1,203 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header{
+    width: 100%;
+    height: auto;
+    nav{
+        width: 80%;
+        margin: auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        a{
+            color: black;
+            &:hover{
+                color: #7FAD39;
+            }
+        }
+        .navbar-collapse{
+            justify-content: center;
+            gap: 25px;
+            .navbar-nav{
+                gap: 35px;
+            }
+            .icons{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                gap: 25px;
+            }
+        }
+        .dropdown{
+            &:hover{
+                .dropdown-menu{
+                    display: block;
+                }
+            }
+        }
+    }
+}
+
+
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 50px;
+    #banner{
+        background-image: url(/assets/media/banner.jpg);
+        background-size: cover;
+        width: 100%;
+        min-height: 660px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .banner-sec-content{
+            h3{
+                color: #7FAD39;
+                font-size: 14px;
+            }
+            h1{
+                font-size: 60px;
+                font-weight: 700;
+            }
+            p{
+                color: gray;
+            }
+            button{
+                border: none;
+                padding: 10px 20px;
+                background-color: #7FAD39;
+                color: #fff;
+            }
+        }
+    }
+    #sec-two{
+        .sec-two-cart{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                text-align: center;
+                flex-direction: column;
+            img{
+                width: 80%;
+            }
+            h3{
+                font-size: 15px;
+                font-weight: 700;
+            }
+        }
+    }
+    #product-sec{
+        .product-sec-head{
+            margin: auto;
+            width: 40%;
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            gap: 20px;
+            .line-green{
+                height: 4px;
+                width: 45px;
+                background-color: #7FAD39;
+            }
+            ul{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                gap: 35px;
+                li{
+                    list-style: none;
+                }
+            }
+        }
+        .row{
+            img{
+                width: 100%;
+            }
+        }
+    }
+    #sec-img{
+        img{
+            width: 100%;
+        }
+    }
+}
+footer{
+    padding: 20px;
+    margin: auto;
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+@media only screen and (max-width:576px){
+    main{
+        #banner{
+            .banner-sec-content{
+                h1{
+                    font-size: 45px;
+                }
+            }
+        }
+        #product-sec{
+            .product-sec-head{
+                width: 85%;
+                h2{
+                    font-size: 24px;
+                }
+            }
+            .row{
+                    img{
+                        width: 80%;
+                    }
+                }
+        }
+        ul{
+            gap: 15px;
+            li{
+                font-size: 12px;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width:496px){
+    main{
+        #banner{
+            .banner-sec-content{
+                h1{
+                    font-size: 35px;
+                }
+                p{
+                    font-size: 10px;
+                }
+                button{
+                    padding: 5px 10px;
+                }
+            }
+        }
+        #product-sec{
+            .product-sec-head{
+                width: 100%;
+            }
+        }
+    }
+    footer{
+        span{
+            font-size: 8px;
+        }
+        img{
+            width: 60%;
+        }
+    }
+}
